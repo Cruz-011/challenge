@@ -70,3 +70,39 @@ section:last-child {
   margin-right: 0; 
   margin-bottom: 50px;
 }
+
+.botao-principal{
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 400px; 
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background: rgba(0, 148, 255, 80%);
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+  margin-bottom: 50px;
+}
+
+.botao {
+  padding: 20px 40px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 360px;
+  background: rgba(0, 148, 255, 50%);
+  width: 200px;
+  height: 70px;
+}

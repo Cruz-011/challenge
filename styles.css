@@ -55,3 +55,8 @@ body {
   justify-content: space-between;
   
 }
+
+.container img {
+  max-width: 200px; 
+  height: auto; 
+}

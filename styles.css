@@ -34,4 +34,86 @@ body {
     font-size: 18px;
   }
 
+<<<<<<< HEAD
   
+=======
+.utilizacao-image {
+  display: flex;
+  background-image: url('./imagens/celular\ pessoa.jfif');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 800px; 
+  height: 359px; 
+  float: right; 
+  margin-top: -257px;
+  margin-right: -105px;
+
+}
+
+.container {
+  text-align: center; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  
+}
+
+.container img {
+  max-width: 200px; 
+  height: auto; 
+}
+
+section {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+section:last-child {
+  margin-right: 0; 
+  margin-bottom: 50px;
+}
+
+.botao-principal{
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 400px; 
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background: rgba(0, 148, 255, 80%);
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+  margin-bottom: 50px;
+}
+
+.botao {
+  padding: 20px 40px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 360px;
+  background: rgba(0, 148, 255, 50%);
+  width: 200px;
+  height: 70px;
+}
+.problemas{
+  text-align: center;
+}
+
+.btp{
+  text-align: center;
+}
+>>>>>>> 4fccfc759e9289a8bb37e8f641351bd30ca6101d

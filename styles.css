@@ -1,42 +1,68 @@
 body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .topo {
-    background-color: #F2F4FF;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-  }
-  
-  .topo img {
-    flex-direction: row;
-    width: 300px; 
-    height: auto; 
-    margin-right: auto;
-    margin-top: -50px;
-    margin-bottom: 30px;
-  
-  
-  }
-  
-  .topo h1 {
-    margin: 0; 
-    margin-left: 10px;
-    margin-top: -150px;
-    margin-bottom: -20px;
-  }
-  
-  .topo h2{
-    font-size: 18px;
-  }
+  font-family: 'Arial', sans-serif;
+}
 
-<<<<<<< HEAD
+.topo {
+  background-color: #F2F4FF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   
-=======
+}
+
+.topo img {
+  flex-direction: row;
+  width: 300px; 
+  height: auto; 
+  margin-right: auto;
+  margin-top: -50px;
+  margin-bottom: 30px;
+
+
+}
+
+.topo h1 {
+  margin: 0; 
+  margin-left: 10px;
+  margin-top: -150px;
+  margin-bottom: -20px;
+}
+
+.topo h2{
+  font-size: 18px;
+}
+
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: -20px;
+
+}
+
+.card {
+  border: 1px solid black;
+  background-color: rgba(0, 148, 255, 21%);
+  padding: 103px;
+
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #F2F4FF;
+  padding: 20px;
+  text-align: center;
+}
+
 .utilizacao-image {
   display: flex;
   background-image: url('./imagens/celular\ pessoa.jfif');
@@ -51,6 +77,7 @@ body {
 
 }
 
+
 .container {
   text-align: center; 
   display: flex; 
@@ -63,6 +90,7 @@ body {
   max-width: 200px; 
   height: auto; 
 }
+
 
 section {
   flex: 1; 
@@ -109,6 +137,7 @@ section:last-child {
   width: 200px;
   height: 70px;
 }
+
 .problemas{
   text-align: center;
 }
@@ -116,4 +145,3 @@ section:last-child {
 .btp{
   text-align: center;
 }
->>>>>>> 4fccfc759e9289a8bb37e8f641351bd30ca6101d

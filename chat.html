@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/chat.css">
-    <title>Carcheck</title>
+    <title>CarCheck</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/chat.css">
 </head>
-<body class="geral">
+<body class="light-theme dark-theme">
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -26,15 +27,15 @@
                         </a>
                         <div class="sair">
                             <input type="button" value="Sair/trocar" onclick="window.location.href='./login.html'">
-                          </div>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <div class="carchek">
+    <div class="nft-store">
         <div class="container-fluid">
-            <div class="carchek">
+            <div class="nft-store-inner d-flex">
                 <div class="menu-links">
                     <ul>
                         <li class="nav-item active">
@@ -75,6 +76,22 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-container chat-right">
+        <div class="chat-header">
+            <h3>Chat</h3>
+        </div>
+        <div class="chat-messages">
+            <!-- Mensagens de chat irão aqui -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Digite sua mensagem..." />
+            <button type="button">Enviar</button>
+        </div>
+    </div>
 
     <footer class="footer">
         <p> @2024 CarCheck - Solução em Identificação de Problemas Automotivos. Todos os direitos reservados.</p>

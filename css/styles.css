@@ -101,19 +101,19 @@ body {
   text-align: center;
   max-width: 1630px;
   max-height:1630px;
-  margin-top: 20px; /* Adicione um espaço entre o card e a container */
+  margin-top: 20px; 
 }
 
 .container section {
   flex: 200px;
-  margin: 15px; /* Espaçamento entre as seções */
-  max-width: 200px; /* Largura máxima das seções */
+  margin: 15px; 
+  max-width: 200px; 
 }
 
 .container img {
   max-width: 100%; 
   height: auto;
-  margin-bottom: 10px; /* Adiciona espaço entre as imagens */
+  margin-bottom: 10px; 
 
 }
 

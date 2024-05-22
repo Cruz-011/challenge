@@ -375,6 +375,7 @@ h5 {
 }
 
 .menu-links ul li a {
+    text-decoration: none;
     color: var(--white-color);
     transition: all 0.5s;
 }

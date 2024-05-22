@@ -71,7 +71,7 @@ body {
 }
 
 .card {
-  display: flex;
+  display: table;
   border: 1px solid white;
   background-color: rgba(0, 148, 255, 80%);
   padding: 103px;
@@ -80,8 +80,13 @@ body {
   height: 500px;
 }
 
+.section-heading{
+    padding-top: 20px;
+}
+
 .card p {
     font-size: 18px;
+    padding-left: 4px;
 }
 
 .text-center {

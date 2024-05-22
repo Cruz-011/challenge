@@ -86,7 +86,7 @@ body {
 
 .utilizacao-image {
   display: flex;
-  background-image: url('./imagens/celular pessoa.jfif'); 
+  background-image: url('./imagens/celular pessoa.png'); 
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;

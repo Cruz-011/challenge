@@ -33,19 +33,14 @@ body {
     height: auto; 
 }
 
-.card {
-  display: flex;
-  border: 1px solid white;
-  background-color: rgba(0, 148, 255, 80%);
-  padding: 103px;
-  margin: 25px; 
-  width: 1630px;
-  height: 500px;
+
+.section-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -20px;
 }
 
-.card p {
-    font-size: 18px;
-}
+
 
 .text-center {
     text-align: center;
@@ -55,9 +50,7 @@ body {
     display: flex;
 }
 
-.justify-content-between {
-    justify-content: space-between;
-}
+
 
 .align-items-center {
     align-items: center;
@@ -70,8 +63,8 @@ body {
 
 .container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -99,133 +92,19 @@ body {
     width: 100%;
 }
 
-.utilizacao-image {
-  display: flex;
-  background-image: url('./imagens/celular pessoa.png'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px; 
-  height: 350px;
-  max-width: 100%;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
-  text-align: center;
-  max-width: 1630px;
-  max-height:1630px;
-  margin-top: 20px; 
-}
-
-.container section {
-  flex: 200px;
-  margin: 15px; 
-  max-width: 200px; 
-}
-
-.container img {
-  max-width: 100%; 
-  height: auto;
-  margin-bottom: 10px; 
-
-}
-
-.container h1 {
-  font-size: 18px; 
-  margin: 10px 0; 
-}
-
-.container p {
-  font-size: 14px; 
-  margin: 5px 0; 
-}
-
-section {
-    flex: 1;
-    margin-right: 20px;
-}
-
-section:last-child {
-    margin-right: 0;
-    margin-bottom: 50px;
-}
-
-.botao-principal {
-    display: inline-block;
-    text-decoration: none;
-    padding: 20px 400px;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    background: rgba(0, 148, 255, 80%);
-}
-
-
-.botoes-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.botao {
-    padding: 20px 40px;
-    margin-right: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 360px;
-    background: rgba(0, 148, 255, 50%);
-    width: 200px;
-    height: 70px;
-}
-
-.problemas {
-    text-align: center;
-}
-
-.btp {
-    text-align: center;
-}
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 32px;
-    line-height: 40px;
-    color: #fff;
-}
 
-h2 {
-    font-size: 26px;
-    line-height: 34px;
-}
 
-h3 {
-    font-size: 24px;
-    line-height: 32px;
-}
 
-h4 {
-    font-size: 14px;
-    line-height: 22px;
+.theme-btn:hover {
+    color: var(--theme-color);
+    background: white;
 }
-
-h5 {
-    font-size: 12px;
-    line-height: 20px;
-}
-
 
 .menu-links.left {
     left: 0%;
@@ -259,11 +138,11 @@ h5 {
 }
 
 .header-content form input[type="search"]::-webkit-input-placeholder {
-    color: white;
+    color: var(--white-color);
 }
 
 .header-content form input[type="search"] {
-    color: white;
+    color: var(--white-color);
     height: 42px;
     padding: 10px 20px;
     border-radius: 50px;
@@ -273,6 +152,17 @@ h5 {
 .search-icon {
     position: relative;
     width: 85%;
+}
+
+.search-icon i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: var(--white-color);
+    transform: translateY(-50%);
 }
 
 .light-theme .header-content form input[type="search"] {
@@ -285,12 +175,18 @@ h5 {
     background: #272933;
 }
 
+.header-content a {
+    display: inline-block;
+}
 
 .header-content .profile {
     margin: 0px 20px 0px 50px;
     color: var(--white-color);
 }
 
+.header-content .profile:hover {
+    text-decoration: none;
+}
 
 .menu-links ul {
     list-style: none;

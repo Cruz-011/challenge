@@ -34,23 +34,41 @@ body {
 }
 
 .card {
-  display: table;
+  display: flex;
+  align-items: center;
   border: 1px solid white;
   background-color: rgba(0, 148, 255, 80%);
   padding: 103px;
   margin: 25px; 
   width: 1630px;
-  height: 500px;
-}
-
-.section-heading{
-    padding-top: 20px;
+  height: 380px;
 }
 
 .card p {
     font-size: 18px;
     padding-left: 4px;
 }
+
+.utilizacao-image {
+    width: 400px; 
+    height: 350px;
+    
+}
+  
+.img_celular{
+    width: 503px;
+    height: auto;
+}
+
+.texto_card{
+    flex: 1;
+    padding-bottom: 100px;
+}
+
+.section-heading{
+    padding-top: 20px;
+}
+
 
 .text-center {
     text-align: center;
@@ -102,17 +120,6 @@ body {
 .form-control {
     display: block;
     width: 100%;
-}
-
-.utilizacao-image {
-  display: flex;
-  background-image: url('/imagens/celular.png'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 400px; 
-  height: 350px;
-  max-width: 100%;
 }
 
 .container {

@@ -80,3 +80,9 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.footer {
+  background-color: #141217;
+  padding: 20px;
+  text-align: center;
+}

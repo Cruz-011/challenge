@@ -18,7 +18,6 @@ body {
     margin-right: 10px; 
 }
 
-
 .sair input[type="button"] {
     background-color: transparent;
     color: white; 
@@ -34,14 +33,16 @@ body {
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  border: 1px solid white;
-  background-color: rgba(0, 148, 255, 80%);
-  padding: 103px;
-  margin: 25px; 
-  width: 1630px;
-  height: 380px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgba(0, 148, 255, 80%);
+    padding: 103px;
+    margin: 25px; 
+    width: 1630px;
+    height: 380px;
+    margin-top: -40px;
+    margin-left: 60px;
 }
 
 .card p {
@@ -50,25 +51,26 @@ body {
 }
 
 .utilizacao-image {
-    width: 400px; 
-    height: 350px;
-    
-}
-  
-.img_celular{
-    width: 503px;
-    height: auto;
+    width: 415px; 
+    height: 450px;
 }
 
-.texto_card{
+.img_celular {
+    border: 1px solid white;
+    margin-top: 35px;
+    margin-left: -280px;
+    width: 800px;
+    height: 380px;
+}
+
+.texto_card {
     flex: 1;
     padding-bottom: 100px;
 }
 
-.section-heading{
+.section-heading {
     padding-top: 20px;
 }
-
 
 .text-center {
     text-align: center;
@@ -90,15 +92,13 @@ body {
     justify-content: flex-end;
 }
 
-
 .container-fluid {
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .navbar {
     padding: 1rem 1rem;
@@ -123,36 +123,35 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
-  text-align: center;
-  max-width: 1630px;
-  max-height:1630px;
-  margin-top: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    text-align: center;
+    max-width: 1630px;
+    max-height: 1630px;
+    margin-top: 20px; 
 }
 
 .container section {
-  flex: 200px;
-  margin: 15px; 
-  max-width: 200px; 
+    flex: 200px;
+    margin: 15px; 
+    max-width: 200px; 
 }
 
 .container img {
-  max-width: 100%; 
-  height: auto;
-  margin-bottom: 10px; 
-
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px; 
 }
 
 .container h1 {
-  font-size: 18px; 
-  margin: 10px 0; 
+    font-size: 18px; 
+    margin: 10px 0; 
 }
 
 .container p {
-  font-size: 14px; 
-  margin: 5px 0; 
+    font-size: 14px; 
+    margin: 5px 0; 
 }
 
 section {
@@ -176,7 +175,6 @@ section:last-child {
     border-radius: 50px;
     background: rgba(0, 148, 255, 80%);
 }
-
 
 .botoes-container {
     display: flex;
@@ -238,9 +236,14 @@ h5 {
     line-height: 20px;
 }
 
-
 .menu-links.left {
-    left: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #141217;
+    padding-top: 32px;
 }
 
 .navbar {
@@ -287,17 +290,14 @@ h5 {
     width: 85%;
 }
 
-
 .dark-theme .header-content form input[type="search"] {
     background: #272933;
 }
-
 
 .header-content .profile {
     margin: 0px 20px 0px 150px;
     color: white;
 }
-
 
 .menu-links ul {
     list-style: none;

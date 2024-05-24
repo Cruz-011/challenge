@@ -6,13 +6,14 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
-img {
 
+img {
   display: block;
   margin: 0 auto;
   width: 500px; /* Ajuste conforme necessário */
   margin-top: -400px; /* Espaçamento superior */
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -85,4 +86,83 @@ body {
   background-color: #141217;
   padding: 20px;
   text-align: center;
+}
+
+/* Media Queries para Desktop */
+@media (min-width: 1024px) {
+  img {
+    width: 600px; 
+    margin-top: -400px; 
+  }
+
+  .login {
+    width: 300px;
+  }
+
+  .login h2 {
+    font-size: 2.5em;
+  }
+
+  .login .inputBx input {
+    font-size: 1.4em;
+    padding: 14px 24px;
+  }
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  img {
+    width: 450px;
+    margin-top: -350px; 
+  }
+
+  .login {
+    width: 350px;
+  }
+
+  .login h2 {
+    font-size: 2.2em;
+  }
+
+  .login .inputBx input {
+    font-size: 1.3em;
+    padding: 14px 22px;
+  }
+}
+
+/* Media Queries para Dispositivos Móveis */
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+    overflow: auto;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 0; 
+  }
+
+  .login {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .login h2 {
+    font-size: 1.5em;
+  }
+
+  .login .inputBx input {
+    font-size: 1em;
+    padding: 10px 16px;
+  }
+
+  .login .links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+  }
 }

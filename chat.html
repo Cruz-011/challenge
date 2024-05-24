@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarCheck</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/chat.css">
 </head>
 <body class="light-theme dark-theme">
@@ -19,7 +18,7 @@
                         <form class="d-flex justify-content-end align-items-center">
                             <div class="search-icon">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
                             </div>
                         </form>
                         <a href="#" class="profile">
@@ -34,9 +33,9 @@
         </div>
     </header>
 
-    <div class="nft-store">
+    <div >
         <div class="container-fluid">
-            <div class="nft-store-inner d-flex">
+            <div class="d-flex">
                 <div class="menu-links">
                     <ul>
                         <li class="nav-item active">
@@ -81,20 +80,48 @@
         </div>
     </div>
 
-    <div class="chat-container chat-right">
-        <div class="chat-header">
-            <h3>Chat</h3>
+    <div class="container">
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Chat</h3>
+            </div>
+            <div class="chat-messages">
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Digite sua mensagem..." />
+                <button type="button">Enviar</button>
+            </div>
         </div>
-        <div class="chat-messages">
-        </div>
-        <div class="chat-input">
-            <input type="text" placeholder="Digite sua mensagem..." />
-            <button type="button">Enviar</button>
-        </div>
+
     </div>
 
     <footer class="footer">
         <p>@2024 CarCheck - Solução em Identificação de Problemas Automotivos. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Script para integração do Watson Assistant Chat -->
+    <script> 
+        window.watsonAssistantChatOptions = { 
+            integrationID: "457dc11a-4e37-4465-9c6b-f6bd176697f5",
+            region: "us-south",
+            serviceInstanceID: "a409e957-8698-4144-a7c0-ad9c4ae701ef",
+            onLoad: async (instance) => { await instance.render(); } 
+        }; 
+        setTimeout(function(){ 
+            const t=document.createElement('script'); 
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"; 
+            document.head.appendChild(t); 
+        }); 
+
+        // Abre o chat automaticamente ao carregar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatButton = document.querySelector('.WAButton');
+            if (chatButton) {
+                chatButton.click();
+            }
+        });
+    </script>
 </body>
 </html>
+

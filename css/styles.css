@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-
 body {
     --theme-color: #0078ff;
     font-family: 'Arial', sans-serif;
@@ -331,12 +329,11 @@ h5 {
     text-align: center;
 }
 
-/* Media Queries para Desktop */
 @media (min-width: 1024px) {
     .card {
-        width: 80%;
+        width: 70%;
         padding: 100px;
-        margin:  auto;
+        
     }
 
     .img_celular {
@@ -345,7 +342,19 @@ h5 {
     }
 
     .botao-principal {
-        padding: 20px 100px;
+        padding: 15px 90px;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .problemas{
+        width: 80%;
+    }
+
+    .btp {
+        width: 80%;
     }
 }
 

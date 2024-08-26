@@ -189,11 +189,12 @@ body {
     }
     
     .img_mais {
-        margin-top: -350px;
-        margin-left: 950px;
+        margin-top: -40%;
+        margin-left: 45%;
         width: 150px;
         height: 150px;
     }
+
 }
 
 /* Media Queries para Tablets */

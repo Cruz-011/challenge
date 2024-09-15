@@ -162,3 +162,125 @@ body {
     padding: 20px;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+/* Media Queries para Desktop */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 3px 24px;
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 28px;
+    }
+
+    .header-content form input[type="search"] {
+        height: 48px;
+        padding: 12px 24px;
+    }
+
+    .menu-links ul li {
+        margin-bottom: 50px;
+    }
+
+    .menu-links ul li a i {
+        width: 36px;
+        height: 36px;
+    }
+
+    .chat-container {
+        max-width: 75%  ;
+        height: 700px;
+    }
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        padding: 28px 20px;
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 24px;
+    }
+
+    .header-content form input[type="search"] {
+        height: 44px;
+        padding: 11px 22px;
+    }
+
+    .menu-links ul li {
+        margin-bottom: 45px;
+    }
+
+    .menu-links ul li a i {
+        width: 34px;
+        height: 34px;
+    }
+
+    .chat-container {
+        max-width: 95%;
+        height: 75vh;
+    }
+}
+
+/* Media Queries para Dispositivos Móveis */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px;
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .header-content form {
+        width: 100%;
+    }
+
+    .header-content form input[type="search"] {
+        height: 40px;
+        padding: 10px 20px;
+    }
+
+    .header-content .profile {
+        margin: 10px 0 0 0;
+    }
+
+    .menu-links {
+        width: 100%;
+    }
+
+    .menu-links ul li {
+        margin-bottom: 35px;
+    }
+
+    .menu-links ul li a i {
+        width: 28px;
+        height: 28px;
+    }
+
+    .chat-container {
+        margin-top: 20px;
+        margin-right: 0;
+        height: 70vh;
+    }
+
+    .chat-header {
+        font-size: 18px;
+    }
+
+    .chat-input button {
+        padding: 10px;
+    }
+}
+>>>>>>> 4ef3cbfb755ae23265df96b2e2c56d68c8f9d237

@@ -163,6 +163,7 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .form-container {
     padding: 20px;
     background-color: #1a1725; 
@@ -171,6 +172,39 @@ body {
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: -400px;
+=======
+/* Media Queries para Desktop */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 32px 24px;
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 28px;
+    }
+
+    .header-content form input[type="search"] {
+        height: 48px;
+        padding: 12px 24px;
+    }
+
+    .menu-links ul li {
+        margin-bottom: 50px;
+    }
+
+    .menu-links ul li a i {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .img_mais {
+        margin-top: -40%;
+        margin-left: 45%;
+        width: 150px;
+        height: 150px;
+    }
+
+>>>>>>> 4ef3cbfb755ae23265df96b2e2c56d68c8f9d237
 }
 
 .form-container h2 {

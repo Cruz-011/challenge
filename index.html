@@ -46,13 +46,13 @@
                     <li class="nav-item">
                         <a href="./chat.html" class="d-flex align-items-center nav-link">
                             <img src="./imagens/icons8-bate-papo-50.png" alt="Novo Chat Icon" class="nav-icon">
-                            <span>Novo Chat</span>
+                            <span>Servicos em andamento </span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="./chat.html" class="d-flex align-items-center nav-link">
                             <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
-                            <span>Chat</span>
+                            <span>Historico de Serviços</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -67,12 +67,6 @@
                             <span>Veiculos Salvos</span>
                         </a>
                     </li>
-
-
-                    <li class="nav-item">
-                        <a href="./configuracao.html" class="d-flex align-items-center nav-link">
-                            <img src="./imagens/icons8-engrenagem-50.png" alt="Configurações Icon" class="nav-icon">
-                            <span>Configurações</span>
                         </a>
                     </li>
                 </ul>
@@ -144,5 +138,21 @@
     <footer class="footer">
         <p>@2024 CarCheck - Solução em Identificação de Problemas Automotivos. Todos os direitos reservados.</p>
     </footer>
+
+        <!-- Script para integração do Watson Assistant Chat -->
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "5efed643-cb22-4c9d-832c-8fab5499e7d7", // The ID of this integration.
+              region: "us-south", // The region your integration is hosted in.
+              serviceInstanceID: "a409e957-8698-4144-a7c0-ad9c4ae701ef", // The ID of your service instance.
+              onLoad: async (instance) => { await instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+          
 </body>
 </html>

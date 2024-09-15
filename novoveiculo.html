@@ -12,7 +12,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="header-inner d-flex justify-content-between align-items-center">
                     <a class="navbar-brand flex-shrink-0" href="#">
-                        <img src="./Imagens/carchek sem fundo.png" alt="logo-image" class="img-fluid" width="200px">
+                        <img src="./imagens/carchek sem fundo.png" alt="logo-image" class="img-fluid" width="200px">
                     </a>
                     <div class="header-content d-flex align-items-center justify-content-end">
                         <form class="d-flex justify-content-end align-items-center">
@@ -33,8 +33,8 @@
         </div>
     </header>
 
-    <div class="container-fluid">
-        <div class="d-flex">
+    <div class="">
+        <div class="">
             <div class="menu-links">
                 <ul>
                     <li class="nav-item active">
@@ -46,7 +46,13 @@
                     <li class="nav-item">
                         <a href="./chat.html" class="d-flex align-items-center nav-link">
                             <img src="./imagens/icons8-bate-papo-50.png" alt="Novo Chat Icon" class="nav-icon">
-                            <span>Novo Chat</span>
+                            <span>Servicos em andamento </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./chat.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
+                            <span>Historico de Serviços</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -56,29 +62,69 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./chat.html" class="d-flex align-items-center nav-link">
-                            <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
-                            <span>Chat</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="./veiculosalvo.html" class="d-flex align-items-center nav-link">
                             <img src="./imagens/icons8-carro-50.png" alt="Veiculos Salvos Icon" class="nav-icon">
                             <span>Veiculos Salvos</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="./configuracao.html" class="d-flex align-items-center nav-link">
-                            <img src="./imagens/icons8-engrenagem-50.png" alt="Configurações Icon" class="nav-icon">
-                            <span>Configurações</span>
                         </a>
                     </li>
                 </ul>
             </div>
+
+    <main>
+        <div class="form-container">
+            <h2>Cadastro de Veículo</h2>
+            <form id="vehicle-form">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+                
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+                
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" required>
+                
+                <label for="combustivel">Combustível:</label>
+                <select id="combustivel" name="combustivel" required>
+                    <option value="alcool">Álcool</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="hibrido">Híbrido</option>
+                    <option value="eletrico">100% Elétrico</option>
+                </select>
+                
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa" required>
+                
+                <label for="chassis">Chassis:</label>
+                <input type="text" id="chassis" name="chassis" required>
+                
+                <button type="submit">Salvar</button>
+            </form>
+            <div id="message" class="hidden">
+                <p>Veículo salvo com sucesso!</p>
+                <button onclick="window.location.href='./veiculosalvo.html'">Ver Veículos Salvos</button>
+            </div>
         </div>
-    </div>
-    <div class="utilizacao-imagem">
-        <img class="img_mais" src="./imagens/icons8-mais-2-matemática-100.png" >
-    </div>
+    
+        <script>
+            document.getElementById('vehicle-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+               
+                const formData = new FormData(event.target);
+                const vehicleData = Object.fromEntries(formData.entries());
+    
+               
+                let vehicles = JSON.parse(localStorage.getItem('vehicles')) || [];
+                vehicles.push(vehicleData);
+                localStorage.setItem('vehicles', JSON.stringify(vehicles));
+    
+                
+                document.getElementById('message').classList.remove('hidden');
+            });
+        </script>
+    </main>
 </body>
 </html>

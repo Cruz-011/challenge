@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarCheck</title>
-    <link rel="stylesheet" href="./css/novo.css">
+    <link rel="stylesheet" href="css/salvo.css">
+    <title>Carcheck</title>
 </head>
 <body class="light-theme dark-theme">
     <header>
@@ -12,7 +12,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="header-inner d-flex justify-content-between align-items-center">
                     <a class="navbar-brand flex-shrink-0" href="#">
-                        <img src="./Imagens/carchek sem fundo.png" alt="logo-image" class="img-fluid" width="200px">
+                        <img src="./imagens/carchek sem fundo.png" alt="logo-image" class="img-fluid" width="200px">
                     </a>
                     <div class="header-content d-flex align-items-center justify-content-end">
                         <form class="d-flex justify-content-end align-items-center">
@@ -46,7 +46,13 @@
                     <li class="nav-item">
                         <a href="./chat.html" class="d-flex align-items-center nav-link">
                             <img src="./imagens/icons8-bate-papo-50.png" alt="Novo Chat Icon" class="nav-icon">
-                            <span>Novo Chat</span>
+                            <span>Servicos em andamento </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./chat.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
+                            <span>Historico de Serviços</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -56,26 +62,58 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./chat.html" class="d-flex align-items-center nav-link">
-                            <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
-                            <span>Chat</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="./veiculosalvo.html" class="d-flex align-items-center nav-link">
                             <img src="./imagens/icons8-carro-50.png" alt="Veiculos Salvos Icon" class="nav-icon">
                             <span>Veiculos Salvos</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="./configuracao.html" class="d-flex align-items-center nav-link">
-                            <img src="./imagens/icons8-engrenagem-50.png" alt="Configurações Icon" class="nav-icon">
-                            <span>Configurações</span>
                         </a>
                     </li>
                 </ul>
             </div>
+            <div>
+                <div class="cards-container" id="vehicles-container">
+                    <h1>Veículos Salvos</h1>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>@2024 CarCheck - Solução em Identificação de Problemas Automotivos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const vehiclesContainer = document.getElementById('vehicles-container');
+        
+    
+            const vehicles = JSON.parse(localStorage.getItem('vehicles')) || [];
+        
+            if (vehicles.length === 0) {
+                vehiclesContainer.innerHTML = '<p>Nenhum veículo salvo.</p>';
+            } else {
+                vehiclesContainer.innerHTML = ''; 
+        
+                vehicles.forEach(vehicle => {
+                    const vehicleCard = `
+                        <div class="card">
+                            <h3>${vehicle.marca} ${vehicle.modelo}</h3>
+                            <p>Ano: ${vehicle.ano}</p>
+                            <p>Combustível: ${vehicle.combustivel}</p>
+                            <p>Placa: ${vehicle.placa}</p>
+                            <p>Chassis: ${vehicle.chassis}</p>
+                            <div class="card-actions">
+                                <button class="btn-ajuda">Ajuda</button>
+                                <button class="btn-editar">Editar</button>
+                                <button class="btn-excluir">Excluir</button>
+                            </div>
+                        </div>
+                    `;
+                    vehiclesContainer.innerHTML += vehicleCard;
+                });
+            }
+        });
+    </script>
 </body>
 </html>

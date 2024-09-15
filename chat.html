@@ -12,7 +12,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="header-inner d-flex justify-content-between align-items-center">
                     <a class="navbar-brand flex-shrink-0" href="#">
-                        <img src="./Imagens/carchek sem fundo.png" alt="logo-image" class="img-fluid" width="200px">
+                        <img src="./imagens/carchek sem fundo.png" alt="logo-image" class="img-fluid" width="200px">
                     </a>
                     <div class="header-content d-flex align-items-center justify-content-end">
                         <form class="d-flex justify-content-end align-items-center">
@@ -33,66 +33,47 @@
         </div>
     </header>
 
-    <div >
-        <div class="container-fluid">
-            <div class="d-flex">
-                <div class="menu-links">
-                    <ul>
-                        <li class="nav-item active">
-                            <a href="./index.html" class="d-flex align-items-center nav-link">
-                                <img src="./imagens/icons8-casa-50.png" alt="Inicio Icon" class="nav-icon">
-                                <span>Inicio</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./chat.html" class="d-flex align-items-center nav-link">
-                                <img src="./imagens/icons8-bate-papo-50.png" alt="Novo Chat Icon" class="nav-icon">
-                                <span>Novo Chat</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./novoveiculo.html" class="d-flex align-items-center nav-link">
-                                <img src="./imagens/icons8-sedan-50.png" alt="Novo Veiculo Icon" class="nav-icon">
-                                <span>Novo Veiculo</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./chat.html" class="d-flex align-items-center nav-link">
-                                <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
-                                <span>Chat</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./veiculosalvo.html" class="d-flex align-items-center nav-link">
-                                <img src="./imagens/icons8-carro-50.png" alt="Veiculos Salvos Icon" class="nav-icon">
-                                <span>Veiculos Salvos</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./configuracao.html" class="d-flex align-items-center nav-link">
-                                <img src="./imagens/icons8-engrenagem-50.png" alt="Configurações Icon" class="nav-icon">
-                                <span>Configurações</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="">
+        <div class="">
+            <div class="menu-links">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="./index.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-casa-50.png" alt="Inicio Icon" class="nav-icon">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./chat.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-bate-papo-50.png" alt="Novo Chat Icon" class="nav-icon">
+                            <span>Servicos em andamento </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./chat.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-mensagem-de-bate-papo-50.png" alt="Chat Icon" class="nav-icon">
+                            <span>Historico de Serviços</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./novoveiculo.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-sedan-50.png" alt="Novo Veiculo Icon" class="nav-icon">
+                            <span>Novo Veiculo</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./veiculosalvo.html" class="d-flex align-items-center nav-link">
+                            <img src="./imagens/icons8-carro-50.png" alt="Veiculos Salvos Icon" class="nav-icon">
+                            <span>Veiculos Salvos</span>
+                        </a>
+                    </li>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
 
     <div class="container">
 
-        <div class="chat-container">
-            <div class="chat-header">
-                <h3>Chat</h3>
-            </div>
-            <div class="chat-messages">
-            </div>
-            <div class="chat-input">
-                <input type="text" placeholder="Digite sua mensagem..." />
-                <button type="button">Enviar</button>
-            </div>
-        </div>
 
     </div>
 
@@ -100,20 +81,9 @@
         <p>@2024 CarCheck - Solução em Identificação de Problemas Automotivos. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script para integração do Watson Assistant Chat -->
-    <script>
-        window.watsonAssistantChatOptions = {
-          integrationID: "5efed643-cb22-4c9d-832c-8fab5499e7d7", // The ID of this integration.
-          region: "us-south", // The region your integration is hosted in.
-          serviceInstanceID: "a409e957-8698-4144-a7c0-ad9c4ae701ef", // The ID of your service instance.
-          onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function(){
-          const t=document.createElement('script');
-          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-          document.head.appendChild(t);
-        });
-      </script>
+
 </body>
 </html>
+
+
 

@@ -157,125 +157,88 @@ body {
     margin-right: 12px;
 }
 
-.img_mais {
-    margin-top: -350px;
-    margin-left: 950px;
-    width: 150px;
-    height: 150px;
+.footer {
+    background-color: #141217;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Media Queries para Desktop */
-@media (min-width: 1024px) {
-    .navbar {
-        padding: 32px 24px;
-    }
-
-    .navbar-light .navbar-brand {
-        font-size: 28px;
-    }
-
-    .header-content form input[type="search"] {
-        height: 48px;
-        padding: 12px 24px;
-    }
-
-    .menu-links ul li {
-        margin-bottom: 50px;
-    }
-
-    .menu-links ul li a i {
-        width: 36px;
-        height: 36px;
-    }
-    
-    .img_mais {
-        margin-top: -350px;
-        margin-left: 950px;
-        width: 150px;
-        height: 150px;
-    }
+.form-container {
+    padding: 20px;
+    background-color: #1a1725; 
+    border-radius: 9px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -400px;
 }
 
-/* Media Queries para Tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .navbar {
-        padding: 28px 20px;
-    }
-
-    .navbar-light .navbar-brand {
-        font-size: 24px;
-    }
-
-    .header-content form input[type="search"] {
-        height: 44px;
-        padding: 11px 22px;
-    }
-
-    .menu-links ul li {
-        margin-bottom: 45px;
-    }
-
-    .menu-links ul li a i {
-        width: 34px;
-        height: 34px;
-    }
-
-    .img_mais {
-        margin-top: -300px;
-        margin-left: 700px;
-        width: 130px;
-        height: 130px;
-    }
+.form-container h2 {
+    text-align: center;
 }
 
-/* Media Queries para Dispositivos Móveis */
-@media (max-width: 767px) {
-    body {
-        font-size: 14px;
-        line-height: 22px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 24px 16px;
-    }
-
-    .navbar-light .navbar-brand {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .header-content form {
-        width: 100%;
-    }
-
-    .header-content form input[type="search"] {
-        height: 40px;
-        padding: 10px 20px;
-    }
-
-    .header-content .profile {
-        margin: 10px 0 0 0;
-    }
-
-    .menu-links {
-        width: 100%;
-    }
-
-    .menu-links ul li {
-        margin-bottom: 35px;
-    }
-
-    .menu-links ul li a i {
-        width: 28px;
-        height: 28px;
-    }
-
-    .img_mais {
-        margin-top: -250px;
-        margin-left: 50px;
-        width: 100px;
-        height: 100px;
-    }
+form {
+    display: flex;
+    flex-direction: column;
 }
+
+form label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #272933;
+    color: #fff;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#message.hidden {
+    display: none;
+}
+
+#message p {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+#message button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#message button:hover {
+    background-color: #005bb5;
+}
+
+
+

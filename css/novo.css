@@ -163,7 +163,6 @@ body {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .form-container {
     padding: 20px;
     background-color: #1a1725; 
@@ -172,8 +171,7 @@ body {
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: -400px;
-=======
-/* Media Queries para Desktop */
+
 @media (min-width: 1024px) {
     .navbar {
         padding: 32px 24px;
@@ -204,7 +202,6 @@ body {
         height: 150px;
     }
 
->>>>>>> 4ef3cbfb755ae23265df96b2e2c56d68c8f9d237
 }
 
 .form-container h2 {
